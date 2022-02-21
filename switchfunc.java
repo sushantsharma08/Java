@@ -25,6 +25,7 @@ public class switchfunc {
                 System.out.println("D");
                 break;
             default:
+            System.out.println("undefined input");
                 break;
         }
 
