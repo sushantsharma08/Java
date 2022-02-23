@@ -29,5 +29,10 @@ public class arrays {
             for (int i = 0; i < array.length; i++) {
                 System.out.printf(" array[%d] : " + array[i] +"\n",i);
             }
+
+            int[] numbers = {1,2,3,4};
+            for(int i=0; i<numbers.length; i++){
+            System.out.println(numbers[i]);
+            }
     }
 }
