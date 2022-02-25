@@ -22,7 +22,6 @@ public class arrayOfString {
         for (int i = 0; i < arrayTwo.length; i++) {
             System.out.printf(arrayTwo[i]);
         }
-
         String text="twstinfg the string type";
         System.out.println(text);
     }
