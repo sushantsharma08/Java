@@ -1,4 +1,4 @@
-import javax.swing.plaf.multi.MultiButtonUI;
+
 
 public class multidimentionalArray {
     public static void main(String[] args) {
@@ -8,9 +8,9 @@ public class multidimentionalArray {
             {9,0}
         };
 
-        for(int i=0 ; i<3 ; i++){
-            for(int j=0 ; j<4 ; j++){
-                System.out.print(multiArray[i][j] + " ");
+        for(int i=0 ; i<multiArray.length ; i++){
+            for(int j=0 ; j<multiArray[i].length ; j++){
+                System.out.print(multiArray[i][j] + "\t");
             }
             System.out.println();
         }
