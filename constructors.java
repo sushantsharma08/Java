@@ -1,6 +1,6 @@
 
 class Machine {
-     String name;
+      String name;
     private int code;
 
     public Machine() {
@@ -24,10 +24,10 @@ public class constructors {
         Machine machine1 = new Machine();
         Machine machine2 = new Machine("saw");
         Machine machine3 = new Machine("grinder" , 1);
-
-        // String name3 =machine3.name;
+        System.out.println(machine3.name);
+        String name3 =machine3.name;
         // System.out.println(machine3);
-        // System.out.println(name3);
+        System.out.println(name3);   
         
     }
 }
