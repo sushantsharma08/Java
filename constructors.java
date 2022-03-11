@@ -27,7 +27,7 @@ public class constructors {
         System.out.println(machine3.name);
         String name3 =machine3.name;
         // System.out.println(machine3);
-        System.out.println(name3);   
+        System.out.println(name3); 
         
     }
 }
