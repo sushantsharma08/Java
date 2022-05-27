@@ -1,38 +1,57 @@
-import java.util.Scanner;
-
-class Shape{
-    double a,b;
-    Scanner obj = new Scanner(System.in);
-
-    void get_data(){
-    System.out.println("Enter the values of a and b : ");
-    a = obj.nextDouble();
-    b = obj.nextDouble();
-   }
-}
-
-class Triangle extends Shape{
-    void display_area(){
-        double d = 0.5*a*b;
-        System.out.println("area of triangle with given perimeters : " + d + " units");
-    }
-}
-
-class Rectangle extends Shape{
-    void display_area(){
-        double d = a*b;
-        System.out.println("Area of a rectangle with given parameters is : " + d + " units.");
-    }
-}
-
-public class calsses {
-    public static void main(String[] args) {
-        Triangle T = new Triangle();
-        T.get_data();
-        T.display_area();
-
-        Rectangle R = new Rectangle();
-        // R.get_data();
-        R.display_area();
-    }
-}
+import java.util.Scanner; 
+interface Marks{ 
+void getPercentage(); 
+} 
+class A implements Marks{ 
+float marks[]=new float[3]; 
+Scanner sc=new Scanner(System.in); 
+A() 
+{ 
+System.out.println("Enter the marks of student A: "); 
+for(int i=0;i<3;i++) 
+{ 
+marks[i]=sc.nextFloat(); 
+} 
+} 
+public void getPercentage() 
+{ 
+float total=0; 
+for(int i=0;i<3;i++) 
+{ 
+total=total+marks[i]; 
+} 
+System.out.println("Percentage of A: "+(total/300*100)); 
+} 
+} 
+class B implements Marks{ 
+Scanner sc=new Scanner(System.in); 
+float marks[]=new float[4]; 
+B() 
+{ 
+System.out.println("Enter the marks of student B: "); 
+for(int i=0;i<4;i++) 
+{ 
+marks[i]=sc.nextFloat(); 
+} 
+} 
+public void getPercentage() 
+{ 
+float total=0; 
+for(int i=0;i<4;i++) 
+{ 
+total=total+marks[i]; 
+} 
+System.out.println("Percentage of A is: "+(total/400*100)); 
+} 
+} 
+public class Main 
+{ 
+public static void main(String[] args) { 
+System.out.println("Name: Sparsh Garg"); 
+System.out.println("ENROLLMENT Number: EN20CS301451"); 
+A a=new A(); 
+B b=new B(); 
+a.getPercentage(); 
+b.getPercentage(); 
+} 
+} 
