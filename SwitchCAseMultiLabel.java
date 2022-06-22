@@ -9,7 +9,7 @@ public class SwitchCAseMultiLabel {
             System.out.println("even number");
             break;
             default:
-            System.out.println("enter number btw 1-10");
+            System.out.println("enter number btw 1-10"); 
                 break;
         }
     }
